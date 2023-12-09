@@ -7,7 +7,7 @@ public class box : MonoBehaviour
 {
     public Sprite closedBox, openedBox;
     public int puzzleSceneNumber;
-    public GameObject keyPrefab;
+    public List<GameObject> dropKeyPrefab = new List<GameObject>();
 
     private bool _isPlayerNear = false, _isOpen = false, _iscompleted = false;
     private GameObject player;
@@ -64,9 +64,15 @@ public class box : MonoBehaviour
         _iscompleted = true;
         spriteRender.sprite = openedBox;
 
-        if (keyPrefab != null)
+        if (dropKeyPrefab.Count > 0)
         {
-            GameObject key = Instantiate(keyPrefab, transform.position, transform.rotation);
+            int i = 0;
+            foreach (GameObject itemPrefab in dropKeyPrefab)
+            {
+                GameObject key = Instantiate(itemPrefab, transform.position + new Vector3(i, 0, 0), transform.rotation);
+                key.name = itemPrefab.GetComponent<items>().itemName;
+                i = i + 1;
+            }
         }
     }
 

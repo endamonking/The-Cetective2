@@ -135,4 +135,5 @@ MonoBehaviour:
   - Key_Fragment3
   noItemToUnlockString:
   - I have no keys.
+  - I have no keys.
   speakerPic: {fileID: 21300000, guid: 9ffc8b50d504f8a49bc7072870ec05cc, type: 3}
