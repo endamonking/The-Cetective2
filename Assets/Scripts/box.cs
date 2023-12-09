@@ -64,7 +64,10 @@ public class box : MonoBehaviour
         _iscompleted = true;
         spriteRender.sprite = openedBox;
 
-        GameObject key = Instantiate(keyPrefab, transform.position, transform.rotation);
+        if (keyPrefab != null)
+        {
+            GameObject key = Instantiate(keyPrefab, transform.position, transform.rotation);
+        }
     }
 
 }

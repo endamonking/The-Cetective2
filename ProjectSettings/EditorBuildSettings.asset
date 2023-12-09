@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/case1Puzzle.unity
     guid: 7a13050a0d96f544b8e8bbb4b02be5f3
+  - enabled: 1
+    path: Assets/Scenes/case2Puzzle1.unity
+    guid: d2f0516c56778784cac6bd46cdfb6fea
+  - enabled: 1
+    path: Assets/Scenes/case2Puzzle2.unity
+    guid: b0e7c4ae5b876e44ba7dcb4da983d7b8
+  - enabled: 1
+    path: Assets/Scenes/case2Puzzle3.unity
+    guid: ab9fd381e1192b9409ca15d4b3959245
   m_configObjects: {}

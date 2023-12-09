@@ -7,6 +7,7 @@ public class door : MonoBehaviour
     public List<string> noItemToUnlock = new List<string>();
     public List<string> hasItemToUnlock = new List<string>();
     public string keyName;
+    public Sprite speakerPic;
 
     private bool _isPlayerNear = false;
     private GameObject player;
@@ -48,10 +49,10 @@ public class door : MonoBehaviour
 
         if (checkKey(player.GetComponent<inventory>().items))
         {
-            dialogueManager.Instance.startDialog(hasItemToUnlock);
+            dialogueManager.Instance.startDialog(hasItemToUnlock, speakerPic);
         }
         else
-            dialogueManager.Instance.startDialog(noItemToUnlock);
+            dialogueManager.Instance.startDialog(noItemToUnlock, speakerPic);
 
     }
 

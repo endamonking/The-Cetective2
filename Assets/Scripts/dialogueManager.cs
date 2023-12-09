@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class dialogueManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class dialogueManager : MonoBehaviour
 
     public List<string> dialogList = new List<string>();
     public bool isScreenShowUp = false;
+    public GameObject speakerPic;
 
     private void Awake()
     {
@@ -45,6 +47,8 @@ public class dialogueManager : MonoBehaviour
         }
 
         text = dialogueCanvas.GetComponentInChildren<TextMeshProUGUI>();
+        Transform pickTranform = dialogueCanvas.transform.Find("Pic");
+        speakerPic = pickTranform.gameObject;
 
     }
 
@@ -68,11 +72,17 @@ public class dialogueManager : MonoBehaviour
         text.text = newText;
     }
 
-    public void startDialog(List<string> dialogString)
+    private void changeSpeakerPic(Sprite newNPCPic)
+    {
+        speakerPic.GetComponent<Image>().sprite = newNPCPic;
+    }
+
+    public void startDialog(List<string> dialogString, Sprite speakerPic)
     {
         dialogList.Clear();
         dialogList.AddRange(dialogString);
         _dialogueLine = 0;
+        changeSpeakerPic(speakerPic);
         changeText(dialogList[_dialogueLine]);
         dialogueCanvas.SetActive(true);
         isScreenShowUp = true;

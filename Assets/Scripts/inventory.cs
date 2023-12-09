@@ -6,6 +6,11 @@ public class inventory : MonoBehaviour
 {
     public List<items> items = new List<items>();
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
