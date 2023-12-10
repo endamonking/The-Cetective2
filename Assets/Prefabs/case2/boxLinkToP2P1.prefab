@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdb0ebe43227fad4da91c3a190edf9ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fa74b69cf501e244beda80e63ac88cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 23.88, y: 16.685682}
+    oldSize: {x: 16.685682, y: 23.88}
     newSize: {x: 23.88, y: 16.685682}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432585ffa4c89e248ac692b87ff92a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedBox: {fileID: 21300000, guid: bdb0ebe43227fad4da91c3a190edf9ba, type: 3}
-  openedBox: {fileID: 21300000, guid: 651368c386197f340a1c1e7cc3f6e0fc, type: 3}
+  closedBox: {fileID: 21300000, guid: 1fa74b69cf501e244beda80e63ac88cb, type: 3}
+  openedBox: {fileID: 21300000, guid: 1fa74b69cf501e244beda80e63ac88cb, type: 3}
   puzzleSceneNumber: 3
   dropKeyPrefab:
   - {fileID: 9034530593348579405, guid: 5ced72aaf72ef4f4ea6c5dfac1e46c2d, type: 3}
