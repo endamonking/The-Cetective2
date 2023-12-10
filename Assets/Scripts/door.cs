@@ -6,6 +6,7 @@ public class door : MonoBehaviour
 {
     public List<string> noItemToUnlock = new List<string>();
     public List<string> hasItemToUnlock = new List<string>();
+    public GameObject doorPrefab; //will generate door to interact to change scene
     public string keyName;
     public Sprite speakerPic;
 
@@ -50,6 +51,9 @@ public class door : MonoBehaviour
         if (checkKey(player.GetComponent<inventory>().items))
         {
             dialogueManager.Instance.startDialog(hasItemToUnlock, speakerPic);
+            GameObject newDoor = Instantiate(doorPrefab, transform.position, transform.rotation);
+            newDoor.name = doorPrefab.name;
+            Destroy(this.gameObject);
         }
         else
             dialogueManager.Instance.startDialog(noItemToUnlock, speakerPic);

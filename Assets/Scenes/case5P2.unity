@@ -284,7 +284,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -296,7 +296,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -911,7 +911,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -923,7 +923,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -1057,7 +1057,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -1069,7 +1069,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -1203,7 +1203,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -1215,7 +1215,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -1349,7 +1349,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: resetAnswer
         m_Mode: 1
         m_Arguments:
@@ -2504,7 +2504,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: checkAnswer
         m_Mode: 1
         m_Arguments:
@@ -2638,7 +2638,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -2650,7 +2650,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -2919,7 +2919,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -2931,7 +2931,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -3065,7 +3065,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -3077,7 +3077,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -3574,7 +3574,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -3586,7 +3586,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -3946,7 +3946,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1661763618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9129727fb60cadd4fa706b0401ed4816, type: 3}
+  m_Script: {fileID: 11500000, guid: 9be46de0add9a7c43881f41093baa8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selectedAnswer: 630000006300000063000000
@@ -3955,20 +3955,11 @@ MonoBehaviour:
   - {fileID: 596366948}
   - {fileID: 1479523126}
   questionList:
-  - Which functions should you use to combine the first and second string? And print
-    them out
-  - Which functions should you use to get user input, check for specific keywords
-    in the input, and tell the user if you found the keywords.
-  - 'You want to find the position of a specific character in the mail string list,
-    which function should you use? '
-  - 'given the strings  char sentence[] = "The quick brown fox jumps over the lazy
-    dog" You want to know how many words is in this mail string and compare it to
-    char sentence[] = "How many words was that" which function should you use? '
-  - You are given 2 mail string, you want to know if the 2 string length are the
-    same, which function should you use?
-  - "Looks like the uppercase and lowercase of the strings in all of this mails are
-    swapped! What could you use to swap them back so they don\u2019t look awful!"
-  refBoxName: boxLinkToP4
+  - "I\u2019m going to copy the message to another string first. "
+  - The strings is really long, I wonder what are the length of the whole messages
+  - I have to find dateofbirth within the whole strings and compare it to the original
+    message just in case
+  refBoxName: boxLinkToP5P2
   questionText: {fileID: 1339117305}
 --- !u!1 &1721308952
 GameObject:
@@ -4325,7 +4316,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -4337,7 +4328,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -4606,7 +4597,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -4618,7 +4609,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
@@ -4875,7 +4866,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: chooseAnswer
         m_Mode: 3
         m_Arguments:
@@ -4887,7 +4878,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1661763620}
-        m_TargetAssemblyTypeName: casr4Manager, Assembly-CSharp
+        m_TargetAssemblyTypeName: stringManager, Assembly-CSharp
         m_MethodName: changeText
         m_Mode: 5
         m_Arguments:
