@@ -9,18 +9,24 @@ public class case3Manager : MonoBehaviour
     public GameObject menuCanvas;
     public GameObject gameCanvas;
     public Slider progressSlider;
-    public TextMeshProUGUI answerText;
-    public List<TextMeshProUGUI> choiceText = new List<TextMeshProUGUI>();
+
+    public List<TextMeshProUGUI> textList = new List<TextMeshProUGUI>();
+    public List<string> firstQuestionString = new List<string>();
+    public List<string> secondQuestionString = new List<string>();
+    public List<string> answerQuestionString = new List<string>();
+    public List<int> questionAnswer = new List<int>();
+
     public string refBoxName;
 
     private float progressValue = 0f;
-    private int correctChoice = 0;
+    private int questionIndex = 0;
     private GameObject refBox;
     // Start is called before the first frame update
     void Start()
     {
         progressSlider.value = progressValue;
         refBox = GameObject.Find(refBoxName);
+        startQuestion();
     }
 
     // Update is called once per frame
@@ -39,15 +45,16 @@ public class case3Manager : MonoBehaviour
     { 
         checkAnswer(answer);
     }
-    
-    public void changeAnswerText(int index)
-    {
-        answerText.text = choiceText[index].text;
-    }
-
+   
     private void updateProgressBar(float value)
     {
         progressValue = progressValue + value;
+        questionIndex = Random.Range(0,questionAnswer.Count);
+        //Change question string
+        textList[0].text = firstQuestionString[questionIndex];
+        textList[1].text = secondQuestionString[questionIndex];
+        textList[2].text = answerQuestionString[questionIndex];
+
         if (progressValue <= 0)
             progressValue = 0;
 
@@ -60,11 +67,19 @@ public class case3Manager : MonoBehaviour
 
     private void checkAnswer(int answer)
     {
-        if (answer == correctChoice)
+        if (answer == questionAnswer[questionIndex])
             updateProgressBar(0.08f);
         else
             updateProgressBar(-0.03f);
 
+    }
+
+    private void startQuestion()
+    {
+        questionIndex = Random.Range(0, questionAnswer.Count);
+        textList[0].text = firstQuestionString[questionIndex];
+        textList[1].text = secondQuestionString[questionIndex];
+        textList[2].text = answerQuestionString[questionIndex];
     }
 
     
