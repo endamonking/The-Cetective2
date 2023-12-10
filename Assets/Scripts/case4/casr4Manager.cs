@@ -6,10 +6,12 @@ using TMPro;
 public class casr4Manager : MonoBehaviour
 {
 
-    public int[,] correctAnswer = new int[7, 3];
+    public int[,] correctAnswer = new int[6, 3];
     public int[] selectedAnswer = new int[3];
     public List<GameObject> answerText = new List<GameObject>();
+    public List<string> questionList = new List<string>();
     public string refBoxName;
+    public TextMeshProUGUI questionText;
 
     private GameObject refBox;
     private int questionIndex = 0;
@@ -20,11 +22,12 @@ public class casr4Manager : MonoBehaviour
         refBox = GameObject.Find(refBoxName);
         correctAnswer = new int[,] 
         {
-            { 1,2,3},{ 0,0,0},
-            { 0,0,0},{ 0,0,0},
-            { 0,0,0},{ 0,0,0},
-            { 0,0,0},
+            { 2,3,1},{ 0,10,1},
+            { 4,99,99},{ 5,7,99},
+            { 6,7,99},{ 8,9,99},
         };
+
+        questionText.text = questionList[questionIndex];
     }
 
     // Update is called once per frame
@@ -49,7 +52,7 @@ public class casr4Manager : MonoBehaviour
 
     public void resetAnswer()
     {
-        selectedAnswer = new int[] { 9, 9, 9 };
+        selectedAnswer = new int[] { 99, 99, 99 };
         answerIndex = 0;
         foreach (GameObject answer in answerText)
         {
@@ -69,18 +72,20 @@ public class casr4Manager : MonoBehaviour
                 break;
             }
         }
+
         if (isCorrect)
         {
             questionIndex++;
+            if (questionIndex >= 6)
+            {
+                refBox.GetComponent<box>().completed();
+                return;
+            }
+            questionText.text = questionList[questionIndex];
             resetAnswer();
         }
         else
             resetAnswer();
-
-        if (questionIndex >= 7)
-        {
-            refBox.GetComponent<box>().completed();
-        }
 
 
     }
