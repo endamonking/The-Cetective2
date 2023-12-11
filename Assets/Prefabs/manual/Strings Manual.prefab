@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2316237417604616287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2316237417604616284}
+  - component: {fileID: 2316237417604616285}
+  - component: {fileID: 2316237417604616286}
+  m_Layer: 0
+  m_Name: Strings Manual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2316237417604616284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316237417604616287}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 99, y: -1.45, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2316237417604616285
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316237417604616287}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3a073d6e7d03970489c884fc98a954f8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20.48, y: 20.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &2316237417604616286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316237417604616287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236512c4a3a49b54fb771f843d7601ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Strings_Manual
+  itemDescription: 'In C, a string is a sequence of characters stored in an array.
+    Unlike some other programming languages, C does not have a built-in string type.
+    Instead, strings are represented as arrays of characters, terminated by a null
+    character (''\0''). Strings in C are manipulated using a set of standard library
+    functions.  String functions  1. Scanf - The scanf function is used to read formatted
+    strings from the console. 2. Printf - The printf function is used to print formatted
+    strings to the console. 3. Strcpy - The strcpy function is used to copy the contents
+    of one string into another. 4. Strcat - The strcat function is used to concatenate
+    (append) one string to the end of another. 5. Strchr - The strchr function is
+    used to find the first occurrence of a character in a string. It returns a pointer
+    to the first occurrence or NULL if the character is not found. 6. Strtok - The
+    strtok function is used to tokenize (break down) a string into a sequence of
+    tokens based on a specified delimiter. 7. Strlen - The strlen function is used
+    to find the length of a string, excluding the null character. 8. Strcmp - The
+    strcmp function is used to compare two strings. It returns 0 if the strings are
+    equal, a positive value if the first string is greater, and a negative value
+    if the second string is greater. 9. Strlwr - change all of the character in the
+    string into lower case 10.strupr - change all of the character in the string
+    into upper case 11.strstr - The strstr function is used to find the first occurrence
+    of a substring in a string. It returns a pointer to the first occurrence or NULL
+    if the substring is not found. '
+  pic: {fileID: 21300000, guid: 3a073d6e7d03970489c884fc98a954f8, type: 3}
