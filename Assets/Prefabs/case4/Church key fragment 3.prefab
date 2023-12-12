@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236512c4a3a49b54fb771f843d7601ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Church_key_fragment 3
+  itemName: Church_key_fragment_3
   itemDescription: use to open church
-  pic: {fileID: 21300000, guid: 87054cdb279468c4f926e362023bd757, type: 3}
+  pic: {fileID: 21300000, guid: 13c00d6811b040c4488716038f5842f3, type: 3}
 --- !u!212 &2783999664027119224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 87054cdb279468c4f926e362023bd757, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13c00d6811b040c4488716038f5842f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

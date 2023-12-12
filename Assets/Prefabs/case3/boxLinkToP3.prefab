@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdb0ebe43227fad4da91c3a190edf9ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf2e6a3d8190ce440be03f37b14326b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,8 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432585ffa4c89e248ac692b87ff92a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedBox: {fileID: 21300000, guid: bdb0ebe43227fad4da91c3a190edf9ba, type: 3}
-  openedBox: {fileID: 21300000, guid: 651368c386197f340a1c1e7cc3f6e0fc, type: 3}
+  closedBox: {fileID: 21300000, guid: bf2e6a3d8190ce440be03f37b14326b4, type: 3}
+  openedBox: {fileID: 21300000, guid: bf2e6a3d8190ce440be03f37b14326b4, type: 3}
   puzzleSceneNumber: 6
   dropKeyPrefab:
   - {fileID: 9181956643792226113, guid: f71911bc57cb6494f9394d7f8f57802a, type: 3}
