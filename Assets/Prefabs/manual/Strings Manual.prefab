@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2316237417604616285}
   - component: {fileID: 2316237417604616286}
   - component: {fileID: -5946092043046814255}
+  - component: {fileID: 1133038655338883469}
   m_Layer: 0
   m_Name: Strings Manual
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2316237417604616287}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 99, y: -1.45, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -98,28 +99,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236512c4a3a49b54fb771f843d7601ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Strings_Manual
-  itemDescription: 'In C, a string is a sequence of characters stored in an array.
+  itemName: Strings_Manua1
+  itemDescription: In C, a string is a sequence of characters stored in an array.
     Unlike some other programming languages, C does not have a built-in string type.
     Instead, strings are represented as arrays of characters, terminated by a null
-    character (''\0''). Strings in C are manipulated using a set of standard library
-    functions.  String functions  1. Scanf - The scanf function is used to read formatted
-    strings from the console. 2. Printf - The printf function is used to print formatted
-    strings to the console. 3. Strcpy - The strcpy function is used to copy the contents
-    of one string into another. 4. Strcat - The strcat function is used to concatenate
-    (append) one string to the end of another. 5. Strchr - The strchr function is
-    used to find the first occurrence of a character in a string. It returns a pointer
-    to the first occurrence or NULL if the character is not found. 6. Strtok - The
-    strtok function is used to tokenize (break down) a string into a sequence of
-    tokens based on a specified delimiter. 7. Strlen - The strlen function is used
-    to find the length of a string, excluding the null character. 8. Strcmp - The
-    strcmp function is used to compare two strings. It returns 0 if the strings are
-    equal, a positive value if the first string is greater, and a negative value
-    if the second string is greater. 9. Strlwr - change all of the character in the
-    string into lower case 10.strupr - change all of the character in the string
-    into upper case 11.strstr - The strstr function is used to find the first occurrence
-    of a substring in a string. It returns a pointer to the first occurrence or NULL
-    if the substring is not found. '
+    character ('\0'). Strings in C are manipulated using a set of standard library
+    functions.
   pic: {fileID: 21300000, guid: 5221453deb14a524a853e3f774d9ec19, type: 3}
   soundEffect: {fileID: 8300000, guid: 9065eb8823494a74b80e1ac3ea52200d, type: 3}
 --- !u!82 &-5946092043046814255
@@ -218,3 +203,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &1133038655338883469
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316237417604616287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 23.88, y: 16.685682}
+    newSize: {x: 20.48, y: 20.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 23.88, y: 16.685682}
+  m_EdgeRadius: 0
