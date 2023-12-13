@@ -524,7 +524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106513322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.5, y: -1.11, z: 0}
+  m_LocalPosition: {x: 104.9, y: -1.11, z: 0}
   m_LocalScale: {x: 0.2, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -592,6 +592,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
+  isOpen: 0
+  ui_Window: {fileID: 0}
+  item_images: []
+  ui_description_Window: {fileID: 0}
+  description_image: {fileID: 0}
+  description_Title: {fileID: 0}
+  description_details: {fileID: 0}
 --- !u!1001 &150492867585551815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,6 +713,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df87cf63b1dabcf4380d20b856cd6b8c, type: 3}
+--- !u!1001 &554777902802886913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2218989641588483833, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_Name
+      value: FAX
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 105.41639
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218989641588483835, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14d9db844c8a13c458ff3f65743bef02, type: 3}
 --- !u!1001 &1574589171205843084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1046,6 +1110,22 @@ PrefabInstance:
       propertyPath: doorPrefab
       value: 
       objectReference: {fileID: 547232609}
+    - target: {fileID: 4047048326453597501, guid: 161a5f0c19fd1074da581be2f1895919, type: 3}
+      propertyPath: noItemToUnlock.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047048326453597501, guid: 161a5f0c19fd1074da581be2f1895919, type: 3}
+      propertyPath: hasItemToUnlock.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047048326453597501, guid: 161a5f0c19fd1074da581be2f1895919, type: 3}
+      propertyPath: noItemToUnlock.Array.data[1]
+      value: Looks like I need a key to unlock this door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047048326453597501, guid: 161a5f0c19fd1074da581be2f1895919, type: 3}
+      propertyPath: hasItemToUnlock.Array.data[1]
+      value: "it\u2019s unlocked now! "
+      objectReference: {fileID: 0}
     - target: {fileID: 4047048326453597503, guid: 161a5f0c19fd1074da581be2f1895919, type: 3}
       propertyPath: m_Name
       value: Park door locked

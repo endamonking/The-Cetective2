@@ -13,10 +13,14 @@ public class BoxNoLoadScene : MonoBehaviour
     private bool _isPlayerNear = false, _isOpen = false, _iscompleted = false;
     private GameObject player;
     private SpriteRenderer spriteRender;
+
+    public AudioClip soundEffect;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         spriteRender = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -57,6 +61,7 @@ public class BoxNoLoadScene : MonoBehaviour
             }
             _iscompleted = true;
             spriteRender.sprite = openedBox;
+            audioSource.PlayOneShot(soundEffect);
         }
         else
         {

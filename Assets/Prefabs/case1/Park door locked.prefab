@@ -100,8 +100,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noItemToUnlock:
   - Looks like I need a key to unlock this door.
+  - Looks like I need a key to unlock this door.
   hasItemToUnlock:
   - "it\u2019s unlocked now! "
+  - "it\u2019s unlocked now! "
+  doorPrefab: {fileID: 0}
   keyName: Gate_key
   speakerPic: {fileID: 21300000, guid: 9ffc8b50d504f8a49bc7072870ec05cc, type: 3}
 --- !u!61 &4047048326453597502

@@ -12,10 +12,15 @@ public class box : MonoBehaviour
     private bool _isPlayerNear = false, _isOpen = false, _iscompleted = false;
     private GameObject player;
     private SpriteRenderer spriteRender;
+
+    public AudioClip soundEffect;
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRender = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,12 +52,20 @@ public class box : MonoBehaviour
 
     public void LoadSceneAdditive()
     {
+        if (bgmManager.Instance != null)
+        {
+            bgmManager.Instance.playBGM(1);
+        }
         _isOpen = true;
         Time.timeScale = 0;
         SceneManager.LoadScene(puzzleSceneNumber, LoadSceneMode.Additive);
     }
     private void UnloadScene()
     {
+        if (bgmManager.Instance != null)
+        {
+            bgmManager.Instance.playBGM(0);
+        }
         _isOpen = false;
         Time.timeScale = 1f;
         SceneManager.UnloadSceneAsync(puzzleSceneNumber);
@@ -63,7 +76,7 @@ public class box : MonoBehaviour
         UnloadScene();
         _iscompleted = true;
         spriteRender.sprite = openedBox;
-
+        audioSource.PlayOneShot(soundEffect);
         if (dropKeyPrefab.Count > 0)
         {
             int i = 0;

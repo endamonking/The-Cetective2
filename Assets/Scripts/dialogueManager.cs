@@ -18,7 +18,7 @@ public class dialogueManager : MonoBehaviour
     public List<string> dialogList = new List<string>();
     public bool isScreenShowUp = false;
     public GameObject speakerPic;
-
+    private IEnumerator myCoroutine;
     private void Awake()
     {
         // if the singleton hasn't been initialized yet
@@ -64,6 +64,7 @@ public class dialogueManager : MonoBehaviour
         isClosingDialog = true;
         dialogueCanvas.SetActive(false);
         Time.timeScale = 1f;
+        // myCoroutine = closeFlagDelay();
         StartCoroutine(closeFlagDelay());
     }
 

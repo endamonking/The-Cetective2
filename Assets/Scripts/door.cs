@@ -24,7 +24,9 @@ public class door : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && _isPlayerNear && dialogueManager.Instance.isScreenShowUp == false)
+        {
             openDoor();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -55,13 +57,17 @@ public class door : MonoBehaviour
 
         if (checkKey(player.GetComponent<inventory>().items))
         {
+            Debug.Log("a");
             dialogueManager.Instance.startDialog(hasItemToUnlock, speakerPic);
             GameObject newDoor = Instantiate(doorPrefab, transform.position, transform.rotation);
             newDoor.name = doorPrefab.name;
             Destroy(this.gameObject);
         }
         else
+        {
             dialogueManager.Instance.startDialog(noItemToUnlock, speakerPic);
+            Debug.Log("B");
+        }
 
     }
 
