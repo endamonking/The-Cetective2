@@ -51,6 +51,7 @@ public class items : MonoBehaviour
         player.GetComponent<inventory>().items.Add(this);
         FindObjectOfType<inventory>().UpdateInventory(gameObject);
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
         StartCoroutine(delay());
     }
 

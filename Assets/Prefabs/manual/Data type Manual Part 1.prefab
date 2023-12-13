@@ -100,21 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Data_type_Manual1
-  itemDescription: 'The basics you want to know first is about Arithmetic operators\n 
-    1. Addition `+`\n The addition operator is used to add two operands. It works
-    with both numbers and characters.\n Example:\n int sum = 5 + 3\n If you print
-    out sum, the result will be 8\n 2. Subtraction `-`\n The subtraction operator
-    is used to subtract the right operand from the left operand.\n Example:\n int
-    difference = 7 - 4; \n If you print out difference , the result will be 3\n 3.
-    Multiplication `*`\n The multiplication operator is used to multiply two operands.\n
-    int product = 6 * 2;   // product is 12\n If you print out product , the result
-    will be 12\n 4. Division `/`\n The division operator is used to divide the left
-    operand by the right operand. Note that if both operands are integers, the result
-    will be an integer (the fractional part is truncated). Example:\n int Div = 10
-    / 3;\n If you print out Div , the result will be 3 (originally 3.33 but truncated)\n
-    5. Modulus `%`\n The modulus operator gives the remainder when the left operand
-    is divided by the right operand.\n Example:\n int remainder = 10 % 3;   // remainder
-    is 1\n If you print out remainder , the result will be 1\n '
+  itemDescription: In C programming, a data type is a classification that specifies
+    which type of value a variable can hold. Data types are crucial because they
+    determine the amount of memory space required to store data and the operations
+    that can be performed on that data.
   pic: {fileID: 21300000, guid: 39723fcc80e176143bb16069b08c73e7, type: 3}
   soundEffect: {fileID: 8300000, guid: 9065eb8823494a74b80e1ac3ea52200d, type: 3}
 --- !u!82 &1088233013133115181

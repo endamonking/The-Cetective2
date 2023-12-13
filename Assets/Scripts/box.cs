@@ -9,7 +9,7 @@ public class box : MonoBehaviour
     public int puzzleSceneNumber;
     public List<GameObject> dropKeyPrefab = new List<GameObject>();
 
-    private bool _isPlayerNear = false, _isOpen = false, _iscompleted = false;
+    public bool _isPlayerNear = false, _isOpen = false, _iscompleted = false;
     private GameObject player;
     private SpriteRenderer spriteRender;
 

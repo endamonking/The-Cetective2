@@ -100,22 +100,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Operator_Manual2
-  itemDescription: 'Basic data type  1.int The int data type is used to store integer
-    values (whole numbers). It has a default size of 4 bytes. 2.char The char data
-    type is used to store single characters. It has a default size of 1 byte. 3.float
-    The float data type is used to store floating-point numbers (real numbers). It
-    has a default size of 4 bytes. 4.double The double data type is used to store
-    double-precision floating-point numbers. It has a default size of 8 bytes.  Ranges
-    of data types int: -2,147,483,648 to 2,147,483,647 char: -128 to 127 or 0 to
-    255 float: 3.4e-38 to 3.4e38 (6 decimal places) double: 1.7e-308 to 1.7e308 (15
-    decimal places)  How to declare variable To declare a variable, you specify the
-    data type followed by the variable name. int age;            // Declaration of
-    an integer variable char initial;       // Declaration of a character variable
-    float temperature;  // Declaration of a float variable double salary;      //
-    Declaration of a double variable  You can also initialize and assign value to
-    the variable at the same time of declaring int count = 10;     // Declaration
-    and initialization of an integer variable char letter = ''C'';  // Declaration
-    and initialization of a character variable '
+  itemDescription: 'Order of operations When using multiple operators in the same
+    operations, the computer will choose which operator will perform first. The priorities
+    are as follows from top to bottom 1. Parentheses `()` 2. Postfix `++`, `--` 3.
+    Multiplication `*`, Division `/`, Modulus `%` 4. Addition `+`, Subtraction `-`
+    5. Relational `<`, `<=`, `>`, `>=` 6. Equality `==`, `!=`` '
   pic: {fileID: 21300000, guid: 6fe7512d38b332b47ab8963e0be3798a, type: 3}
   soundEffect: {fileID: 8300000, guid: 9065eb8823494a74b80e1ac3ea52200d, type: 3}
 --- !u!82 &5395365893054850162
