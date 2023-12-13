@@ -20,11 +20,12 @@ namespace DialogueSystems
                 transform.GetChild(i).gameObject.SetActive(true);
                 yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogSound>().finished);
             }
-            canvasToControlclose.gameObject.SetActive(false);
+            
             
             if (canvasToControlopen != null)
                 {
                     canvasToControlopen.gameObject.SetActive(true);
+                    canvasToControlclose.gameObject.SetActive(false);
                 }
             gameObject.SetActive(false);
         }

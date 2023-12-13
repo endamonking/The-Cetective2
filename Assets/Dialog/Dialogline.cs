@@ -38,8 +38,7 @@ namespace DialogueSystem
         }
         private void Update()
         {
-            if(Input.GetMouseButtonDown(0))
-            {
+            if(Input.GetMouseButtonDown(0)){
                 if(textholder.text != input)
                 {
                     StopCoroutine(lineAppear);
