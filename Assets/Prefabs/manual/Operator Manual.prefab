@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9206351763905153134}
   - component: {fileID: -4457205066861789594}
   m_Layer: 0
-  m_Name: 'Operator Manual '
+  m_Name: Operator Manual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
