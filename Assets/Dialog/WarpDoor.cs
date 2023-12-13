@@ -43,7 +43,7 @@ public class WarpDoor : MonoBehaviour
     {
         _starting.SetActive(true);
         players.transform.position = destination.transform.position;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         
         _starting.SetActive(false);
     }
