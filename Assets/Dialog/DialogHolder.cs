@@ -28,12 +28,12 @@ namespace DialogueSystem
         {
             if(!dialogFinished)
             {
-            for(int i = 0; i < transform.childCount-1; i++)
-            {
-                Deactivate();
-                transform.GetChild(i).gameObject.SetActive(true);
-                yield return new WaitUntil(() => transform.GetChild(i).GetComponent<Dialogline>().finished);
-            }
+                for(int i = 0; i < transform.childCount-1; i++)
+                {
+                    Deactivate();
+                    transform.GetChild(i).gameObject.SetActive(true);
+                    yield return new WaitUntil(() => transform.GetChild(i).GetComponent<Dialogline>().finished);
+                }
             }
             else
             {
