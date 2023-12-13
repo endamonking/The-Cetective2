@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPCscript : MonoBehaviour
+public class NPCscript1 : MonoBehaviour
 {
-    
+    public Canvas canvasToopen;
+
     private bool _isPlayerNear = false;
     private GameObject player;
  
@@ -13,7 +14,7 @@ public class NPCscript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && _isPlayerNear)
             {
-                gameObject.GetComponent<NPCController>().ActivateDialogue();
+                canvasToopen.gameObject.SetActive(true);
             }
         
     }

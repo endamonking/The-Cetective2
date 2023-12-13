@@ -21,20 +21,41 @@ namespace DialogueSystem
         [SerializeField] private Sprite charactersprite;
         [SerializeField] private Image imageholder;
 
+        private IEnumerator lineAppear;
+
 
         private void Awake()
-        {
-            textholder = GetComponent<Text>();
-            textholder.text = "";
-
-            
+        {          
             imageholder.sprite = charactersprite;
             imageholder.preserveAspect = true;
         }
-        private void Start()
+        private void OnEnable()
         {
-            StartCoroutine(WriteText(input, textholder, textColor, textFont,delay,sound,DelaybetweenDialog));
+            Time.timeScale = 0f;
+            ResetLine();
+            lineAppear = WriteText(input, textholder, textColor, textFont,delay,sound,DelaybetweenDialog);
+            StartCoroutine(lineAppear);
         }
-        
+        private void Update()
+        {
+            if(Input.GetMouseButtonDown(0))
+            {
+                if(textholder.text != input)
+                {
+                    StopCoroutine(lineAppear);
+                    textholder.text = input;
+                }
+                else
+                    finished = true;
+                    Time.timeScale = 1f;
+            }
+        }
+
+        private void ResetLine()
+        {
+            textholder = GetComponent<Text>();
+            textholder.text = "";
+            finished = false;
+        }
     }
 }

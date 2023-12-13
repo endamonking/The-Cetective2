@@ -46,7 +46,7 @@ public class inventory : MonoBehaviour
         HideAll();
         for(int i=0;i<items.Count;i++)
         {
-            item_images[i].sprite=items[i].GetComponent<SpriteRenderer>().sprite;
+            item_images[i].sprite=items[i].pic;
             item_images[i].gameObject.SetActive(true);
         }
     }
