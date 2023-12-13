@@ -21,6 +21,7 @@ public class items : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && _isPlayerNear && dialogueManager.Instance.isScreenShowUp == false)
             pickup();
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -44,6 +45,7 @@ public class items : MonoBehaviour
     private void pickup()
     {
         player.GetComponent<inventory>().items.Add(this);
+        FindObjectOfType<inventory>().UpdateInventory(gameObject);
         Destroy(this.gameObject);
     }
 

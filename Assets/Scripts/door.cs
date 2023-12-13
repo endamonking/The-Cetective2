@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class door : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class door : MonoBehaviour
     public GameObject doorPrefab; //will generate door to interact to change scene
     public string keyName;
     public Sprite speakerPic;
+    
 
     private bool _isPlayerNear = false;
     private GameObject player;
@@ -45,8 +47,11 @@ public class door : MonoBehaviour
 
     private void openDoor()
     {
+        
+        
         if (player == null)
             return;
+        
 
         if (checkKey(player.GetComponent<inventory>().items))
         {

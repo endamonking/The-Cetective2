@@ -11,6 +11,8 @@ public class Playermovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     void Update()
     {
+        if(CanMove()==false)
+            return;
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         Flip();
@@ -30,6 +32,14 @@ public class Playermovement : MonoBehaviour
             transform.localScale = localScale;
 
         }
+    }
+    bool CanMove()
+    {
+        bool can = true;
+        if (FindObjectOfType<inventory>().isOpen)
+            can = false;
+        return can; 
+            
     }
 
 }
